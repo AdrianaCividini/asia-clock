@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>⏰Asia-Clock</title>
   </head>
@@ -15,18 +15,19 @@
     </h1>
 
     <div class="container">
-      <div class="city">
-        <select id="city">
-          <option>Select a city...</option>
-          <option>Current Location ⇢</option>
-          <option>Rio de janeiro🇧🇷</option>
-          <option>Rome🇮🇹</option>
-          <option>New York🇺🇸</option>
-          <option>Cairo🇭🇷</option>
-        </select>
-      </div>
+      <h1>⏰</h1>
 
-      <div class="cities" id="jakarta">
+      <select id="city">
+        <option>Select a city...</option>
+        <option value="current">Current Location ⇢</option>
+        <option value="America/Sao_Paulo">Rio de janeiro🇧🇷</option>
+        <option value="Europe/Rome">Rome🇮🇹</option>
+        <option value="America/New_York">New York🇺🇸</option>
+        <option value="Africa/Cairo">Cairo🇭🇷</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="jakarta">
           <div>
             <h2>Jakarta</h2>
             <div class="date"></div>
@@ -34,7 +35,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="singapore">
+        <div class="city" id="singapore">
           <div>
             <h2>Singapore</h2>
             <div class="date"></div>
@@ -42,7 +43,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="kualalumpur">
+        <div class="city" id="kualalumpur">
           <div>
             <h2>Kuala Lumpur</h2>
             <div class="date"></div>
@@ -50,7 +51,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="bangkok">
+        <div class="city" id="bangkok">
           <div>
             <h2>Bangkok</h2>
             <div class="date"></div>
@@ -58,7 +59,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="phnompenh">
+        <div class="city" id="phnompenh">
           <div>
             <h2>Phnom Penh</h2>
             <div class="date"></div>
@@ -66,7 +67,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="hanoi">
+        <div class="city" id="hanoi">
           <div>
             <h2>Hanoi</h2>
             <div class="date"></div>
@@ -74,7 +75,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="tokyo">
+        <div class="city" id="tokyo">
           <div>
             <h2>Tokyo</h2>
             <div class="date"></div>
@@ -82,7 +83,7 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="seoul">
+        <div class="city" id="seoul">
           <div>
             <h2>Seoul</h2>
             <div class="date"></div>
@@ -90,21 +91,13 @@
           <div class="time"></div>
         </div>
 
-        <div class="cities" id="beijing">
+        <div class="city" id="beijing">
           <div>
             <h2>Beijing</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
       </div>
     </div>
 
